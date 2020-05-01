@@ -4,19 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { IndexPageRoutingModule } from './index-routing.module';
+import { SettingsPageRoutingModule } from './settings-routing.module';
 
-import { IndexPage } from './index.page';
-import { IndexRouter } from './index.router';
+import { SettingsPage } from './settings.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    IndexPageRoutingModule,
-    IndexRouter
+    SettingsPageRoutingModule
   ],
-  declarations: [IndexPage]
+  declarations: [SettingsPage]
 })
-export class IndexPageModule {}
+export class SettingsPageModule {}
