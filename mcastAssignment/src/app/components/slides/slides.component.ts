@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlidesComponent implements OnInit {
 
+  slideOpts = {
+    speed: 400
+  };
+
   constructor() { }
 
   ngOnInit() {}
