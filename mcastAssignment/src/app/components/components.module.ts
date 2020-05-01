@@ -4,8 +4,7 @@ import { SlidesComponent } from './slides/slides.component';
 import { StartComponent } from './start/start.component';
 import { LogoComponent } from './logo/logo.component';
 import { FormsModule } from '@angular/forms';
-
-import { IonicModule } from '@ionic/angular';
+  import { IonicModule } from '@ionic/angular';
 
 
 
