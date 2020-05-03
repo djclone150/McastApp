@@ -10,12 +10,13 @@ import { SlidesInstitutesComponent } from './slides-institutes/slides-institutes
 import { SlidesAboutComponent } from './slides-about/slides-about.component';
 import { SlidesEventsComponent } from './slides-events/slides-events.component';
 import { SlidesContactComponent } from './slides-contact/slides-contact.component';
+import { SlidesSettingsComponent } from './slides-settings/slides-settings.component';
 
 
 
 @NgModule({
-  declarations: [SlidesComponent, StartComponent, LogoComponent, SlidesCoursesComponent, SlidesInstitutesComponent, SlidesAboutComponent, SlidesEventsComponent, SlidesContactComponent],
-  exports:[SlidesComponent, StartComponent, LogoComponent, SlidesCoursesComponent, SlidesInstitutesComponent, SlidesAboutComponent, SlidesEventsComponent, SlidesContactComponent],
+  declarations: [SlidesComponent, StartComponent, LogoComponent, SlidesCoursesComponent, SlidesInstitutesComponent, SlidesAboutComponent, SlidesEventsComponent, SlidesContactComponent, SlidesSettingsComponent],
+  exports:[SlidesComponent, StartComponent, LogoComponent, SlidesCoursesComponent, SlidesInstitutesComponent, SlidesAboutComponent, SlidesEventsComponent, SlidesContactComponent, SlidesSettingsComponent],
   imports: [
     CommonModule,
     FormsModule,

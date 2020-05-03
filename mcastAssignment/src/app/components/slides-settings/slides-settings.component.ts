@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-slides-settings',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlidesSettingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
+
+  slideOpts = {
+    speed: 400
+  };
 
 }
