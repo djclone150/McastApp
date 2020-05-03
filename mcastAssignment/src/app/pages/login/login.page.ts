@@ -14,7 +14,7 @@ export class LoginPage implements OnInit {
   }
 
   navigateToHomePage(){
-    this.router.navigate(['home']);
+    this.router.navigate(['./home/feed']);
 
   }
 

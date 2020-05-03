@@ -17,5 +17,25 @@ export class FeedPage implements OnInit {
     this.router.navigate(['courses']);
 
   }
+  
+  navigateToInstitutesPage(){
+    this.router.navigate(['institutes']);
+
+  }
+
+  navigateToAboutPage(){
+    this.router.navigate(['about']);
+
+  }
+
+  navigateToEventsPage(){
+    this.router.navigate(['events']);
+
+  }
+
+  navigateToContactPage(){
+    this.router.navigate(['contact']);
+
+  }
 
 }
