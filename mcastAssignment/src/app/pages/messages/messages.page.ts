@@ -7,6 +7,11 @@ import { IonContent } from '@ionic/angular';
   styleUrls: ['./messages.page.scss'],
 })
 export class MessagesPage implements OnInit {
+
+  opts = {
+    speed: 400
+  };
+
   messages = [
     {
       user: 'simon',
@@ -29,7 +34,7 @@ export class MessagesPage implements OnInit {
 
   currentUser = 'simon';
   newMsg = '';
-  @ViewChild(IonContent) content: IonContent
+  //@ViewChild(IonContent) content: IonContent
 
   constructor() { }
 
@@ -42,15 +47,19 @@ export class MessagesPage implements OnInit {
 
     this.newMsg = '';
 
-    setTimeout(() => {
-      this.content.scrollToBottom(200);
+    //setTimeout(() => {
+      //this.content.scrollToBottom(200);
 
-    });
+    //});
+
+    
     
 
   }
 
   ngOnInit() {
   }
+
+  
 
 }
