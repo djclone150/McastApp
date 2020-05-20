@@ -1,29 +1,22 @@
-<ion-tabs>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-title>
+          MCAST Prospectus
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-  
+<ion-content [fullscreen]="true">
+  <ion-list lines="full">
+      <ion-item 
+          *ngFor="let institute of institutes"
+          [ngStyle]="{ 'color' : institute.color }"
+          [routerLink]="[ '/', 'institute', institute.code] ">
 
-  <ion-tab-bar slot="top" color='primary'>
-    <ion-tab-button tab="feed">
-      <ion-icon name="newspaper-outline"></ion-icon>
-      <ion-label>Feed</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="messages">
-      <ion-icon name="send"></ion-icon>
-      <ion-label>Messages</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="notifications">
-      <ion-icon name="notifications"></ion-icon>
-      <ion-label>Notifications</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="settings">
-      <ion-icon name="cog"></ion-icon>
-      <ion-label>Settings</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
+          {{ prospectusService.getInstituteName(institute) }}
+      </ion-item>
+  </ion-list>
+</ion-content>
 
 <!-- 
 <div class="center">

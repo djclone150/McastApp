@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'courses',
     loadChildren: () => import('./courses/courses.module').then( m => m.CoursesPageModule)
+  },
+  {
+    path: 'institute/:code',
+    loadChildren: () => import('./institute/institute.module').then( m => m.InstitutePageModule)
   }
 
   /*{
@@ -49,6 +53,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
   }*/
 ];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })

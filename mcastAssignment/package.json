@@ -28,7 +28,10 @@
     "core-js": "^2.5.4",
     "ngx-autosize": "^1.7.5",
     "rxjs": "~6.5.1",
+    "stream": "0.0.2",
+    "timer": "^1.0.1",
     "tslib": "^1.9.0",
+    "xml2js": "^0.4.23",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {

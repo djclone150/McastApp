@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ prospectusService.getInstituteName(institute) }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <h3 class="ion-padding">{{ prospectusService.getInstituteName(institute) }}</h3>
+    <p class="ion-padding">{{ institute.desc_mt }}</p>
+
+  <ion-list *ngFor="let course of institute.courses">
+    <h3 class="ion-padding" >{{ course.title }}</h3>
+    <p>Course Code: {{ course.code }}</p>
+    <p>Length: {{ course.duration }} year/s</p>
+    <p>Requirement: {{ course.req_other }}</p><br>
+    <p class="ion-padding" *ngFor="let paragraph of course.desc_en">{{ paragraph }}</p>
+  </ion-list>
+</ion-content>
