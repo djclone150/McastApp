@@ -59,6 +59,8 @@ export class ProspectusService {
         return this._data.find(i => i.code == code);
     }
 
+    
+
     /**
      * Finds and returns the institute name from the JSON object.
      * @param institute The institute object
@@ -68,6 +70,11 @@ export class ProspectusService {
     public getInstituteName(institute: any, lang: string = 'en'): string
     {
         return (lang == 'en') ? institute.name_en : institute.name_mt;
+    }
+
+    public getCourseName(institute: any, lang: string = 'en'): string
+    {
+        return (lang == 'en') ? institute.courses.title : institute.courses.title;
     }
 
     /**
